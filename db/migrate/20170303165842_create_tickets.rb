@@ -4,7 +4,7 @@ class CreateTickets < ActiveRecord::Migration[5.0]
       t.integer :status
       t.string :code
       t.string :value
-
+      t.integer :kind
       t.timestamps
     end
   end

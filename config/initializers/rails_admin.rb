@@ -17,7 +17,7 @@ RailsAdmin.config do |config|
   ## == PaperTrail ==
   # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
 
-  config.main_app_name = ["Octa", "Lottery"]
+  config.main_app_name = ["Octa Lottery", ""]
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
   ## == Gravatar integration ==
@@ -57,6 +57,7 @@ RailsAdmin.config do |config|
     end
 
     config.model Ticket do
+      navigation_icon 'fa fa-money'
       create do
         field  :status
         field  :code
@@ -77,3 +78,29 @@ RailsAdmin.config do |config|
     # history_show
   end
 end
+
+# config.model Discount do
+#   parent Product
+# end
+#
+# config.model Sale do
+#   parent User
+#   weight -2
+# end
+#
+# config.model Comission do
+#   parent User
+#   weight -1
+# end
+#
+# config.model Client do
+#   parent User
+# end
+#
+# config.model ProductQuantity do
+#   visible false
+# end
+#
+# config.model Address do
+#   visible false
+# end

@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:Filip3Dev/temas_admin.git
+  revision: 1b5f88df3b86f738735c093b0236058a392bb0e5
+  specs:
+    rails_admin_rollincode (1.2.1)
+      rails (>= 4.0, < 6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -204,6 +211,7 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.1)
   rails_admin
+  rails_admin_rollincode!
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)

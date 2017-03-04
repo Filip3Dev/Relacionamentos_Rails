@@ -1,0 +1,4 @@
+rails g model User name email image status:integer wallet wallet_key
+rails g model Ticket status:integer code value user:references
+rails g model Lottery lottery_date:date pot selected last_selected
+enum status: [:active, :inactive]
